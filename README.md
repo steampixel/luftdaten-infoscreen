@@ -1,4 +1,4 @@
-# luftdaten.info raspberry info screen
+# Raspberry Info Screen for luftdaten.info
 
 To make the [luftdaten.info](https://luftdaten.info) project more visible to the public I decided to build a little info screen which will jump over predefined map locations and zooms. This project uses the little Raspberry Pi 7" touch display in combination with the FullPageOS. Its ideally for store windows or other locations where people will pay attention.
 
@@ -22,7 +22,6 @@ After flashing the OS to the SD Card you have to edit a few files.
 2. Copy the files `fullpagedashboard.txt` and `fullpageos.txt` from the projects `/boot` folder to your SD card and override the existing files
 
 ## 3. Start and configure the system
-
 1. Power up the Pi and wait a few minutes. Then start the IP scanner of your choice to find its IP address.
 2. Login to your Pi using SSH or SCP.
 3. Change the password of your Pi if you wish using the `passwd` command (You really should)
@@ -33,12 +32,13 @@ After flashing the OS to the SD Card you have to edit a few files.
 If you want to change, add or delete the map URLs you can do this in the `config.js` file. I think this file is self explaining. Just go to https://deutschland.maps.luftdaten.info, zoom to your favorite location and copy the URL. Do not forget to add the `?nooverlay` to the URLs to hide the donation button. For example change https://deutschland.maps.luftdaten.info/#13/49.7956/9.9636 to https://deutschland.maps.luftdaten.info/?nooverlay#13/49.7956/9.9636
 
 # Development
-
 You can launch the web page locally on your PC or Mac and start hacking without a Raspberry Pi. Just clone or download this project. All necessary files are located in /var/www/html/luftdaten.info.
 The index.html document contains a little JavaScript code that will iterate over a list of predefined URLs and display them within an iframe. The info.html document just contains a simple start page for the info screen. The rest of the code does not have any dependencies like jQuery, Bootstrap or something. It is written in pure HTML, JS and CSS to keep things simple. Feel free to create forks or pull requests.
 
-# MIT License
 
+![luftdaten.info raspberry info screen](https://raw.githubusercontent.com/steampixel/luftdaten-infoscreen/master/infoscreen1.jpg)
+
+# MIT License
 Copyright (c) 2018 SteamPixel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
