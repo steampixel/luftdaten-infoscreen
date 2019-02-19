@@ -7,28 +7,32 @@ To make the [luftdaten.info](https://luftdaten.info) project more visible to the
 ## What you will need
 * A Raspberry Pi 3 with WiFi support like this one: https://www.rasppishop.de/Raspberry-Pi-3-Model-B-14-GHz-64Bit-Quad-Core
 * The official 7" Raspberry Pi touchscreen display: https://www.rasppishop.de/Raspberry-Pi-7-Touchscreen-Display
+* Optional: A case for the Pi and the screen: https://www.rasppishop.de/ModMyPi-Raspberry-Pi-7-Touch-Display-Gehaeuse-Schwarz
 * A compatible SD card like this one: https://www.rasppishop.de/Sandisk-microSDHC-UHS-I-A1-16GB-Class10
 * Basic Raspberry Pi knowledge and some tinkering time
 
 # Installation
-## 1. Install the operating system
+## 1. Connect all parts together
+Follow the instructions of the screen to connect it to the Pi.
+
+## 2. Install the operating system
 To make things easier we will install FullPageOS instead of a default Raspbian image. Download an up to date build from http://unofficialpi.org/Distros/FullPageOS/nightly/
 Than flash it to your SD Card. If you have problems installing this OS refer to the FullPageOS GitHub page: https://github.com/guysoft/FullPageOS
 
-## 2. Configure your SD Card
+## 3. Configure your SD Card
 After flashing the OS to the SD Card you have to edit a few files.
 
 1. Set your WiFi connection details in `fullpageos-wpa-supplicant.txt` as described here: https://github.com/guysoft/FullPageOS#how-to-use-it
-2. Copy the files `fullpagedashboard.txt` and `fullpageos.txt` from the projects `/boot` folder to your SD card and override the existing files
+2. Copy the files `fullpagedashboard.txt` and `fullpageos.txt` from the repository `/boot` folder to your SD card and override the existing files.
 
-## 3. Start and configure the system
+## 4. Start and configure the system
 1. Power up the Pi and wait a few minutes. Then start the IP scanner of your choice to find its IP address.
 2. Login to your Pi using SSH or SCP.
-3. Change the password of your Pi if you wish using the `passwd` command (You really should)
-4. Copy the folder luftdaten.info from this project to `/var/www/html/luftdaten.info` on your Pi
+3. Change the password of your Pi if you wish using the `passwd` command (You really should).
+4. Copy the folder `luftdaten.info` from this project to `/var/www/html/luftdaten.info` on your Pi.
 5. In some cases you have to switch the GL Driver to legacy mode if the screen does not display anything. In that case type `sudo raspi-config` and go to Advanced Options -> GL Driver panel and switch to legacy mode. See https://github.com/guysoft/FullPageOS/issues/247 for more details about this bug.
 
-## 4. Change, add or delete map positions
+## 5. Change, add or delete map positions
 If you want to change, add or delete the map URLs you can do this in the `config.js` file. I think this file is self explaining. Just go to https://deutschland.maps.luftdaten.info, zoom to your favorite location and copy the URL. Do not forget to add the `?nooverlay` to the URLs to hide the donation button. For example change https://deutschland.maps.luftdaten.info/#13/49.7956/9.9636 to https://deutschland.maps.luftdaten.info/?nooverlay#13/49.7956/9.9636
 
 # Development
