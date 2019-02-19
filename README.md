@@ -1,6 +1,8 @@
+# luftdaten.info raspberry info screen
+
 To make the [luftdaten.info](https://luftdaten.info) project more visible to the public I decided to build a little info screen which will jump over predefined map locations and zooms. This project uses the little Raspberry Pi 7" touch display in combination with the FullPageOS. Its ideally for store windows or other locations where people will pay attention.
 
-# What you will need
+## What you will need
 * A Raspberry Pi 3 with WiFi support like this one: https://www.rasppishop.de/Raspberry-Pi-3-Model-B-14-GHz-64Bit-Quad-Core
 * The official 7" Raspberry Pi touchscreen display: https://www.rasppishop.de/Raspberry-Pi-7-Touchscreen-Display
 * A compatible SD card like this one: https://www.rasppishop.de/Sandisk-microSDHC-UHS-I-A1-16GB-Class10
