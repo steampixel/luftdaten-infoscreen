@@ -1,6 +1,6 @@
 # Raspberry Pi Info Screen for luftdaten.info
 
-To make the [luftdaten.info](https://luftdaten.info) project more visible to the public I decided to build a little info screen which will jump over predefined map locations and zooms. This project uses the little Raspberry Pi 7" touch display in combination with the [FullPageOS](https://github.com/guysoft/FullPageOS). Its ideally for store windows or other locations where pedestrians will pay attention.
+To make the [luftdaten.info](https://luftdaten.info) project more visible to the public I decided to build a little info screen which will jump and zoom over predefined map locations with predefined time intervals. This project uses the little Raspberry Pi 7" touch display in combination with the [FullPageOS](https://github.com/guysoft/FullPageOS). Its ideally for store windows or other locations where pedestrians will pay attention.
 
 ![luftdaten.info raspberry info screen](https://raw.githubusercontent.com/steampixel/luftdaten-infoscreen/master/infoscreen2.jpg)
 
