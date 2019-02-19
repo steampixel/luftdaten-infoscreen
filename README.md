@@ -16,7 +16,7 @@ To make the [luftdaten.info](https://luftdaten.info) project more visible to the
 Follow the instructions of the screen to connect it to the Pi.
 
 ## 2. Install the operating system
-To make things easier we will install FullPageOS instead of a default Raspbian image. Download an up to date build from http://unofficialpi.org/Distros/FullPageOS/nightly/
+To make things easier we will install FullPageOS instead of a default Raspbian image. Download an up to date build from http://unofficialpi.org/Distros/FullPageOS/nightly/.
 Than flash it to your SD Card. If you have problems installing this OS refer to the FullPageOS GitHub page: https://github.com/guysoft/FullPageOS
 
 ## 3. Configure your SD Card
