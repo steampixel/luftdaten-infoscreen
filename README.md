@@ -42,7 +42,11 @@ The index.html document contains a little JavaScript code that will iterate over
 
 ![luftdaten.info raspberry info screen](https://raw.githubusercontent.com/steampixel/luftdaten-infoscreen/master/infoscreen1.jpg)
 
-# MIT License
+# License
+
+The luftdaten.info logo (luftdaten-feinstaub-selber-messen-logo.png) was created by Adam Whitcroft and is licensed as Creative Commons – Attribution ([CC BY 3.0](https://creativecommons.org/licenses/by/3.0/de/)).
+
+## MIT License
 Copyright (c) 2018 SteamPixel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
